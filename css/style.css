@@ -1,0 +1,188 @@
+/*css*/
+
+body {
+    background-color: #F3F5F4;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.sections {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+/*Old CSS*/
+/*
+Set of colors:
+Background: #ecf0f1;
+Navy Blue for footer: #34495e;
+Turqouise for Banner: #1abc9c;
+Links and buttons: #3498db;
+*/
+/*Other theme: purple : 8e44ad for links and footer*/
+
+a {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+}
+
+a.purpleLinks {
+    color: #8e44ad;
+}
+a.purpleLinks:hover{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8e44ad;
+    cursor: pointer;
+}
+
+#aboutMeText {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+#heroGhostBtn{
+    margin:20px;
+}
+a.ghostButton{
+    display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.3s ease-out,
+              color 0.3s ease-out;
+}
+.ghostButton:hover,
+.ghostButton:active {
+  color: #8e44ad;
+  border-color: #8e44ad;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+.nav {
+    /*background-color: #ecf0f1;*/
+    
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+    float: right;
+    margin: 0;
+}
+
+ul#menu {
+    list-style: none;
+    float: right;
+    width: 400px;
+    z-index: 10000;
+    height: 60px;
+    top: 0;
+    position: absolute;
+}
+
+#banner {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    height: 700px;
+    /*background-color: #1abc9c;*/
+    /*background: url('../images/HeroImage.png') no-repeat center center;*/
+    
+    background-image: linear-gradient(to bottom, rgba(142, 68, 173, 0.4), rgba(0, 0, 0, 0.4)), url('../images/wireframe.jpg');
+    background-size: cover;
+}
+
+#bannerContent {
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 300px;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+#bannerContent> h3 {
+    font-size: 3.0em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#bannerContent> h2 {
+    letter-spacing: 3px;
+}
+/*	 ABOUT SECTION 	*/
+
+#home {
+    height: 600px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#about {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+}
+
+h3.sectionTitle {
+    color: #9b59b6;
+    font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+#skills-section {
+    background: #fff;
+    height: auto;
+}
+/*Highcharts */
+
+#skillsContainer {
+    width: 100%;
+    min-height: 420px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#portfolio-section {
+    height: auto;
+}
+
+.circle {
+    margin: 15 auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #34495e;
+    color: #F3F5F4;
+    text-align: center;
+    padding: 20px;
+}
+
+.circle>i {
+    color: #F3F5F4;
+}
+
+#contact-section {
+    background: #8e44ad;
+    height: 550px;
+    color: #dedede;
+    padding-bottom: 40px;
+}
+
+h3.sectionTitle #contactTitle {
+    color: #fff;
+}
+
+.portfolioText {
+    line-height: 20px;
+}
+
+.centerTextCol {
+    text-align: center;
+}

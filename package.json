@@ -1,0 +1,26 @@
+{
+  "name": "GiaWebsite",
+  "version": "1.0.0",
+  "description": "Gianinna Caceres Portfolio Website",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-uglify": "^0.9.1",
+    "uglify": "^0.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "developer",
+    "Gianinna Caceres",
+    "ui developer",
+    "front-end developer"
+  ],
+  "author": "Gianinna Caceres",
+  "license": "isc"
+}

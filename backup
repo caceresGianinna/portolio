@@ -1,0 +1,231 @@
+  <div class="container-fluid">
+            <!--      ABOUT ME       -->
+            <div class="row wow animated slideInRight sections" id="about-section">
+                <h3 class="sectionTitle text-center">About me</h3>
+                <div class="col-md-3 col-xs-12" id="portrait">
+                    <img src="images/me2.jpg" id="portrait_img" alt="Gianinna Caceres" title="Gianinna Caceres" class="img-circle img-responsive center-block">
+                </div>
+                <div class="col-md-9 col-xs-12">
+                    <!--<span id="hello">Hello!</span>-->
+                    <span id="aboutMeText">
+
+                       <p>I am a Front-End developer who loves to create functional and beautiful websites and web applications. I am a lifetime learner and detail attentive. </p>
+
+                    <!--    <p>I graduated from Technological University of Panama in Bachelor in Systems Engineering. </p>
+                       <p>I am currently working in UBS as a Front-end developer for an internal application using HTML5, CSS3, AngularJs and JavaScript technologies. </p> -->
+
+                       <p>I am also a coffee lover, when I am not learning new technologies, you can also find me drawing fashion illustrations, or learning a new language. </p>
+                       <p>Would you like to know more about me? 
+                        <a class="btn btn-purple" href="" class="purpleLinks">Download my Resume</a>
+                    </p>
+                    </span>
+                </div>
+            </div>
+            <!--  ABOUT ME ENDS -->
+            <!--  SKILLS STARTS -->
+            <div class="row sections" id="skills-section">
+                <h3 class="sectionTitle text-center"> Skills</h3>
+                <div class="col-md-3 text-center">
+                    <h4> Web technologies</h4>
+                    <ul class="skills">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>AngularJs</li>
+                        <li>jQuery UI</li>
+                        <li>Bootstrap</li>
+                        <li>Less</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4 class="text-center">Software  & Tools</h4>
+                    <ul class="skills">
+                        <li>Sublime Text editor</li>
+                        <li>Notepad++</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4>Techniques</h4>
+                    <ul class="skills">
+                        <li>Responsive Web Design</li>
+                        <li>Cross Browser compatibility </li>
+                        <li>Mobile First Approach</li>
+                        <li>Media Queries</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h4>Methodologies</h4>
+                    <ul class="skills">
+                        <li>Agile methodologies</li>
+                        <li>Scrum</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!-- SKILLS ENDS -->
+            <!--  PORTFOLIO  -->
+            <!--row of projects-->
+            <div id="work">
+                <h3 class="sectionTitle text-center"> Work</h3>
+            <div class="row sections">
+                <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
+                    <img src="images/mojobs/mojobsTwo.png" style="height:500px;" class="img-responsive center-block" alt="MoJobs" title="MoJobs">
+                </div>
+                <div class="col-md-7 col-lg-6 portfolioText wow animated bounceInRight">
+                    <h2>Jobs MOGov mobile application </h2>
+                    <h5> CoolSoft - UI Developer - Contractor</h5>
+                    <h5>When: 2014</h5>
+                    <p>Jobs.mo.gov mobile application is the mobile version of the web portal for information and on-line services provided by the Division of Workface Development. </p>
+                    <p>The application provides workforce services for businesses and job seekers in Missouri, helping job seekers find gainful employment and providing businesses with a skilled, trained workforce. </p>
+                    <h5>Technologies Used:</h5>
+                    <ul>
+                        <li>HTML5/CSS3</li>
+                        <li>Ionic open source front-end SDK for developing hybrid mobile apps with HTML5 and AngularJs</li>
+                        <li>Apache Cordoba</li>
+                        <li>AngularJs</li>
+                        <li>Sublime Editor </li>
+                        <li>Github</li>
+                    </ul>
+                    <a class="purpleLinks" href="https://itunes.apple.com/us/app/id926478267?mt=8" target="_blank">Visit application in App Store</a>
+                </div>
+            </div>
+            <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6"><img src="images/mojobs/mojobs_login.png" alt="Mojobs login screen" data-toggle="tooltip" data-placement="top" title="Mojobs Login Screen" data-trigger="hover focus" class="img-thumbnail img-responsive center-block"></div>
+                <div class="col-md-3 col-lgl3 col-xs-12 col-sm-6"><img src="images/mojobs/mojobs_search_results.png" alt="Mojobs search results screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Mojobs search results screen" data-trigger="hover focus"></div>
+                <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6"><img src="images/mojobs/mojobs_search.png" alt="Mojobs search screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Mojobs search screen" data-trigger="hover focus"></div>
+                <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6"><img src="images/mojobs/mojobs_favorites.png" alt="Mojobs favorites screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Mojobs favorites Screen" data-trigger="hover focus"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-lg-6  wow animated bounceInRight">
+                    <h2> Visit Warrensburg  </h2>
+                    <h5>Personal Project</h5>
+                    <h5>When: 2013-2014</h5>
+                    <p> Worked in Warrensburg Visitors Center website, created with Wordpress CMS as per business requirements.</p>
+                    <h5> Technologies and tools used: </h5>
+                    <ul>
+                        <li>Balsamiq</li>
+                        <li>Wordpress</li>
+                        <li>HTML5/CSS3</li>
+                        <li>Google Analytics</li>
+                        <li>Sublime Text </li>
+                        <li>Elegant themes for Wordpress</li>
+                    </ul>
+                    <p>
+                        <a class="purpleLinks" href="http://visitwarrensburg.com/">Visit website</a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
+                    <img src="images/warrensburgScreen.png" class="img-responsive center-block" alt="VisitWarrensburg" title="VisitWarrensburg">
+                </div>
+            </div>
+            <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                <div class="col-md-4"><img src="images/warrensburgOldDrum.png" alt="Warrensburg Visitors Center" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover focus" class="img-thumbnail img-responsive center-block"></div>
+                <div class="col-md-4"><img src="images/WarrensburgPage.png" alt="Warrensburg " class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Warrensburg " data-trigger="hover focus"></div>
+                <div class="col-md-4"><img src="images/WarrensburgPage2.png" alt="Warrensburg Arts" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="The Arts in Warrensburg" data-trigger="hover focus"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-5  wow animated bounceInLeft">
+                    <img src="images/warrensburgAppDashboard.png" class="img-responsive center-block" alt="Warrensburg Visitors Center web app" title="Visit Warrensburg web app">
+                </div>
+                <div class="col-md-7  wow animated bounceInRight">
+                    <h2> Warrensburg Visitors Center web app  </h2>
+                    <h5>2013-2014</h5>
+                    <p> Warrensburg Visitors Center web application provides access to contact form information from VisitWarrensburg website.</p>
+                    <h5> Technologies and tools used: </h5>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>HTML5/CSS3</li>
+                        <li>PHP</li>
+                        <li>Wordpress Plugin ContactFormDb </li>
+                        <li>BootGrid jQuery Plugin</li>
+                    </ul>
+                    <p>
+                        The application allows the user to:
+                        <ul>
+                            <li>Create/Edit/Remove user to access application</li>
+                            <li>Display contact form reports in a Grid</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                <!--   <div class="col-md-6">
+                    <h5> Responsibilities </h5>
+                    <ul>
+                        <li> Created prototype and developed single page web app using Bootstrap, jQuery, AJAX, and PHP.</li>
+                        <li> Used PHP and jQuery to communicate back end with front end </li>
+                        <li> Get the data from Wordpress Contact Form DB tables. </li>
+                        <li> Utilized BootGrid jQuery plugin to display the data in a dynamic grid. </li>
+                    </ul>
+                </div> -->
+                <div class="col-md-6">
+                    <img src="images/WarrensburgDashboard.png" alt="Warrensburg dashboard " class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Dashboard " data-trigger="hover focus">
+                </div>
+                <div class="col-md-6">
+                    <img src="images/createUserScreen.png" alt="Create user screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Create User " data-trigger="hover focus">
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-5  wow animated bounceInLeft">
+                    <img src="images/geometryScreen.png" class="center-block img-responsive" alt="MoJobs" title="MoJobs">
+                </div>
+                <div class="col-md-7 wow animated bounceInRight">
+                    <h2>Geometry Tutorial  </h2>
+                    <h3> Web application running as an Interactive Geometry tutorial</h3>
+                    <h5>2010</h5>
+                    <p>
+                        Web application running as an interactive tutorial to help freshmen in studying Geometry for the admission tests of the Technological University of Panama.
+                    </p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>PHP</li>
+                        <li>jQuery</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--row of projects-->
+            <!--  PORTFOLIO ENDS -->
+            <!--  CONTACT ME  -->
+            <div class="row sections" id="contact-section">
+                <h3 class="sectionTitle text-center" id="contactTitle">Contact me</h3>
+                <div class="col-md-6 col-md-offset-3">
+                    <p class="text-center">Send me a message:</p>
+                    <form>
+                        <div class="form-group wow animated tada">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control input-lg" id="name" placeholder="Name" required>
+                        </div>
+                        <!--  <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="sizing-addon1">
+                                <i class="fa fa-user "></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+                        </div> -->
+                        <div class="form-group wow animated swing">
+                            <label for="email">Your Email address</label>
+                            <input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group wow animated wobble">
+                            <label for="exampleInputPassword1">Your Message</label>
+                            <textarea class="form-control" rows="5">
+                            </textarea>
+                        </div>
+                        <button type="submit" style="width:150px;" class="pull-right btn btn-default btn-lg wow animated slideInLeft">Send</button>
+                    </form>
+                    <div class="text-center">
+                        <p>..or Let's connect:</p>
+                        <img src="images/Facebook.png" height="40" width: "40">
+                        <img src="images/Linked-in.png" height="40" width: "40">
+                    </div>
+                    <hr>
+                    <p class="text-center"> <small>@2015 - Gianinna Caceres </small></p>
+                    <p class="text-center"><small>Created with HTML5 - CSS3 - Bootstrap and <i class="fa fa-heart-o"></i></small></p>
+                </div>
+            </div>
+            <!--  CONTACT ME ENDS -->
+        </div>

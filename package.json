@@ -1,5 +1,5 @@
 {
-  "name": "GiaWebsite",
+  "name": "GIA",
   "version": "1.0.0",
   "description": "Gianinna Caceres Portfolio Website",
   "main": "gruntfile.js",
@@ -7,8 +7,14 @@
     "grunt": "^0.4.5"
   },
   "devDependencies": {
+    "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-uglify": "^0.9.1",
+    "grunt-svn-fetch": "^0.1.5",
     "uglify": "^0.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://giacaceres@bitbucket.org/giacaceres/giaportfolio.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

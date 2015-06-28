@@ -1,89 +1,95 @@
 /*
-	Created by Gianinna Caceres 
-	Gianinnas Caceres Website
-	2015
+    Created by Gianinna Caceres 
+    Gianinnas Caceres Website
+    2015
 */
 //Bootstrap tooltip 
 $(document).ready(function() {
-    $.ajax({
-        url: "https://api.linkedin.com/v1/people/~:(id,first-name,skills,educations,languages,twitter-accounts)?format=json",
-        context: document.body
-    }).done(function(data) {
-        alert(data);
+    //$('#spyThis').scrollspy({ target: '#navmenu' });
+
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.hash);
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 50
+            }, 800);
+        }
     });
+
+    $(window).load(function() {
+        $(".preloader").fadeOut("slow");
+    });
+
+    $(window).scroll(function() {
+        var navbarHeight = $('.navbar').height();
+        var bannerHeight = $('#banner').height();
+        var bannerEnds = bannerHeight - navbarHeight;
+        var ratio = (navbarHeight / bannerHeight);
+        var y = ($(window).scrollTop() * ratio);
+        var smallPadding = navbarHeight - y;
+        if ($(window).scrollTop() > bannerEnds) {
+            console.log('touched');
+            $('.navbar').css('backgroundColor', '#8e44ad');
+            $('.small-logo').css('display', 'block');
+            $('.navbar').css({
+                "box-shadow": " 0 12px 15px 0 rgba(0, 0, 0, 0.24"
+            });
+
+        } else {
+            $('.small-logo').css('display', 'none');
+
+            $('.navbar').css('backgroundColor', 'transparent');
+            $('.navbar').css({
+                "box-shadow": "none"
+            });
+
+        }
+        if ($(this).scrollTop() > bannerEnds) {
+            $('.goTop').fadeIn();
+        } else {
+            $('.goTop').fadeOut();
+        }
+
+
+
+    });
+    //Click event to scroll to top
+    $('.goTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    $('#sendFormBtn').on('click', function(event){
+        event.preventDefault();
+        var response = '';
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        if(!name || !email || !message)
+            response ='Please enter your name, email and message';
+
+        //TO-DO send an email with the data 
+
+
+
+        
+        //response =  'Your message has been sent. Thanks!';    
+        $('#response').text(response).fadeIn();
+        setTimeout(function() {
+            $('#response').text('').fadeOut();
+        }, 3000);
+
+
+    });
+
+
+
 });
 
 $(function() {
     $('[data-toggle="tooltip"]').tooltip();
 })
-
-$(function() {
-    var skillsChart = {
-        chart: {
-            renderTo: 'skillsContainer',
-            type: 'column',
-            marginLeft: 13,
-            marginBottom: 30,
-            marginTop: 5,
-            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-            // width: 900
-
-        },
-        credits: {
-            enabled: false
-        },
-        title: {
-            text: 'My core skills'
-        },
-        legend: {
-            enabled: false
-
-        },
-        plotOptions: {
-            series: {
-                colorByPoint: true,
-                borderWidth: 0,
-                animation: {
-                    duration: 1500
-                },
-                dataLabels: {
-                    enabled: true,
-                    formatter: function() {
-                        if (this.y > 0) return this.y + '%';
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Skills',
-            data: [95, 87, 87, 82, 60, 80]
-        }],
-        colors: [
-            '#9b59b6',
-            '#bdc3c7',
-            '#1abc9c',
-            '#f39c12',
-            '#3498db',
-            '#e67e22'
-        ],
-        xAxis: {
-            categories: ['HTML/CSS', 'Bootstrap', 'jQuery', 'AngularJs', 'OOP Js', 'RWD'],
-            labels: {
-                enabled: true
-            }
-        },
-        yAxis: {
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            title: {
-                text: ''
-            },
-            labels: {
-                enabled: false,
-                format: '{value} %',
-            }
-        }
-    };
-    new Highcharts.Chart(skillsChart);
-
-});

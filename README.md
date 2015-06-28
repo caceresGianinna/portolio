@@ -10,7 +10,10 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
+
 * Summary of set up
+   SVN: Git and repository in Bitbucket
+   Task Manager: Grunt.js
 * Configuration
 * Dependencies
 * Database configuration

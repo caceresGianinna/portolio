@@ -7,34 +7,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="icon.ico" type="image/x-icon">
         <meta name="description" content="Gianinna Caceres User Interface Developer">
-        <meta name="keywords" content="HTML, CSS, developer,user interface, ui developer, front-end developer, frontend, web development">
+        <meta name="keywords" content="HTML, CSS, developer,user interface, ui developer, front-end developer, frontend, web development, user interface developer">
         <meta name="author" content="Gianinna Caceres">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Gianinna Caceres Portfolio</title>
+        <link rel="stylesheet" href="css/vendor/bootstrap/css/bootstrap.min.css">
+        <link href="css/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/animate.css">
-        <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/vendor/typicons/font/typicons.min.css">
+       <!--  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>-->
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-        <title>Gianinna Caceres Portfolio</title>
-        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="http://code.highcharts.com/highcharts.js"></script>
-        <script src="http://code.highcharts.com/modules/exporting.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
-        <script src="js/mainjs.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script>
-        new WOW().init();
-        </script>
+        <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'> 
     </head>
 
     <body>
-        <div class="preloader"></div>
-        <div class="navbar navbar-inverse navbar-fixed-top normalclass" navbar-links " " style="background-color:transparent;color:#fff;font-family:'Lato',sans-serif;border:none;color:#ecf0f1;" role="navigation">
+        <div class="preloader">
+        </div>
+        <div class="navbar navbar-inverse navbar-fixed-top normalclass" id="menuNavContainer" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#222;">
+                    <button type="button" id="mobileMenuBtn" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#403d39;">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -59,17 +51,19 @@
         <div id="spyThis">
             <div id="banner">
                 <div id="bannerContent" class="sectionContainer wow animated bounceInDown">
+                    <!-- <span class="bannerSubtitle"><span>Hello!</span> I am</span> -->
                     <h2>Gianinna Caceres</h2>
-                    <h3>UI developer</h3>
+                    <!-- <span class="bannerSubtitle"> and I am a</span> -->
+                    <h3>Front-End developer</h3>
                     <!--<span class="glyphicon glyphicon-chevron-down" style="font-size:30px;"></span>-->
-                    <a href="#about-section" class="ghostButton" id="heroGhostBtn">Scroll down </a>
+                    <a href="#about-section" class="ghostButton" id="heroGhostBtn">View more</a>
                 </div>
             </div>
             <a href="#0" class="goTop">
                 <span class="glyphicon glyphicon-arrow-up"></span>
             </a>
             <section id="about-section">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row wow animated slideInRight sections" id="about-section">
                         <h3 class="sectionTitle text-center">About me</h3>
                         <div class="col-md-3 col-xs-12" id="portrait">
@@ -81,23 +75,34 @@
 
                        <p>I am a Front-End developer who loves to create functional and beautiful websites and web applications. I am a lifetime learner and detail attentive. </p>
 
-                       <p>I graduated from Technological University of Panama in Bachelor in Systems Engineering. </p>
+                     <!--   <p>I graduated from Technological University of Panama in Bachelor in Systems Engineering. </p> -->
                        <p>I am currently working in UBS as a Front-end developer for an internal application using HTML5, CSS3, AngularJs and JavaScript technologies. </p>
 
                        <p>I am also a coffee lover, when I am not learning new technologies, you can find me drawing fashion illustrations, or learning a new language. </p>
-                        <p>Would you like to know more about me? 
+                       <!--  <p>Would you like to know more about me? 
                         <a class="btn btn-purple" href="" class="purpleLinks">Download my Resume</a>
-                    </p>
+                    </p> -->
                     </span>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- <section>
+                <div class="container">
+                    <h3 class="sectionTitle text-center">Education</h3>
+                    <div class="row sections animated wow fadeIn" id="education-section">
+                        <div class="col-md-6">
+                            <b>University of Central Missouri</b>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
             <section id="skills-section">
                 <div class="container">
                     <div class="row sections" id="skills-section">
                         <h3 class="sectionTitle text-center"> Skills</h3>
                         <div class="col-md-3 text-center">
+                            <span class="giaSkillsIcon typcn typcn-code-outline"></span>
                             <h4> Web technologies</h4>
                             <ul class="skills">
                                 <li>HTML5</li>
@@ -108,17 +113,24 @@
                                 <li>jQuery UI</li>
                                 <li>Bootstrap</li>
                                 <li>Less</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 text-center">
-                            <h4 class="text-center">Software  & Tools</h4>
-                            <ul class="skills">
-                                <li>Sublime Text editor</li>
-                                <li>Notepad++</li>
                                 <li>Wordpress</li>
                             </ul>
                         </div>
                         <div class="col-md-3 text-center">
+                            <span class="giaSkillsIcon typcn typcn-device-laptop"></span>
+                            <h4 class="text-center">Software  & Tools</h4>
+                            <ul class="skills">
+                                <li>Sublime Text editor</li>
+                                <li>Notepad++</li>
+                                <li>Git</li>
+                                <li>SVN</li>
+                                <li>Chrome Developer tools</li>
+                                <li>Firebug</li>
+                                <li>IE Developer tools</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <span class="giaSkillsIcon typcn typcn-cog-outline"></span>
                             <h4>Techniques</h4>
                             <ul class="skills">
                                 <li>Responsive Web Design</li>
@@ -128,8 +140,10 @@
                             </ul>
                         </div>
                         <div class="col-md-3 text-center">
+                            <span class="giaSkillsIcon typcn typcn-book"></span>
                             <h4>Methodologies</h4>
                             <ul class="skills">
+                                <li>SDLC</li>
                                 <li>Agile methodologies</li>
                                 <li>Scrum</li>
                             </ul>
@@ -141,13 +155,31 @@
             <section id="portfolio-section">
                 <div class="container">
                     <h3 class="sectionTitle text-center"> Portfolio</h3>
+                    <div class="row sections separator">
+                        <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
+                            <img src="images/iskartourshome.png" class="img-responsive center-block" alt="Iskar" title="Iskar">
+                        </div>
+                        <div class="col-md-7 col-lg-6 portfolioText wow animated bounceInRight">
+                            <h2>Iskar </h2>
+                            <h5>Personal Project - Iskar Tours</h5>
+                            <h5>When: 2015 - present</h5>
+                            <p>Iskar tours is a company that provides tours to San Blas Islands in Panama.</p>
+                            <h5>Technologies Used:</h5>
+                            <ul>
+                                <li>HTML5/CSS3</li>
+                                <!-- <li>Parallax</li> -->
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="row sections">
                         <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
                             <img src="images/mojobs/mojobsTwo.png" style="height:500px;" class="img-responsive center-block" alt="MoJobs" title="MoJobs">
                         </div>
                         <div class="col-md-7 col-lg-6 portfolioText wow animated bounceInRight">
                             <h2>Jobs MOGov mobile application </h2>
-                            <h5>CoolSoft - UI Developer - Contractor</h5>
+                            <h5>CoolSoft - UI Developer Contractor - Client: Missouri Government</h5>
                             <h5>When: 2014</h5>
                             <p>Jobs.mo.gov mobile application is the mobile version of the web portal for information and on-line services provided by the Division of Workface Development. </p>
                             <p>The application provides workforce services for businesses and job seekers in Missouri, helping job seekers find gainful employment and providing businesses with a skilled, trained workforce. </p>
@@ -163,7 +195,7 @@
                             <a class="purpleLinks" href="https://itunes.apple.com/us/app/id926478267?mt=8" target="_blank">Visit application in App Store</a>
                         </div>
                     </div>
-                    <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                    <div class="row wow sections animated slideInUp separator" style="margin-bottom:40px;">
                         <div class="col-md-3 col-lg-3 col-xs-12 col-sm-6">
                             <h4 class="text-center">Login screen </h4>
                             <img src="images/mojobs/mojobs_login.png" alt="Mojobs login screen" data-toggle="tooltip" data-placement="top" title="Mojobs Login Screen" data-trigger="hover focus" class="img-thumbnail img-responsive center-block"></div>
@@ -177,7 +209,7 @@
                             <h4 class="text-center">Favorites screen</h4>
                             <img src="images/mojobs/mojobs_favorites.png" alt="Mojobs favorites screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Mojobs favorites Screen" data-trigger="hover focus"></div>
                     </div>
-                    <div class="row">
+                    <div class="row sections">
                         <div class="col-md-7 col-lg-6  wow animated bounceInRight">
                             <h2> Visit Warrensburg  </h2>
                             <h5>Warrensburg Visitors Center</h5>
@@ -190,7 +222,7 @@
                                 <li>HTML5/CSS3</li>
                                 <li>Google Analytics</li>
                                 <li>Sublime Text </li>
-                                <li>Elegant themes for Wordpress</li>
+                                <!--  <li>Elegant themes for Wordpress</li> -->
                             </ul>
                             <p>
                                 <a class="purpleLinks" href="http://visitwarrensburg.com/">Visit website</a>
@@ -200,7 +232,7 @@
                             <img src="images/warrensburgScreen.png" class="img-responsive center-block" alt="VisitWarrensburg" title="VisitWarrensburg">
                         </div>
                     </div>
-                    <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                    <div class="row wow animated sections slideInUp separator" style="margin-bottom:40px;">
                         <div class="col-md-6">
                             <h4 class="text-center">Old Drum page</h4>
                             <img src="images/warrensburgOldDrum.png" alt="Warrensburg Visitors Center" data-toggle="tooltip" data-placement="top" title="" data-trigger="hover focus" class="img-thumbnail img-responsive center-block"></div>
@@ -211,7 +243,7 @@
                             <h4 class="text-center">About Warrensburg page</h4>
                             <img src="images/about_warrensburg.png" alt="Warrensburg Arts" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Warrensburg" data-trigger="hover focus"></div>
                     </div>
-                    <div class="row">
+                    <div class="row sections">
                         <div class="col-md-5  wow animated bounceInLeft">
                             <img src="images/warrensburgAppDashboard.png" class="img-responsive center-block" alt="Warrensburg Visitors Center web app" title="Visit Warrensburg web app">
                         </div>
@@ -237,7 +269,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row wow animated slideInUp" style="margin-bottom:40px;">
+                    <div class="row wow sections animated slideInUp separator" style="margin-bottom:40px;">
                         <div class="col-md-6">
                             <h4 class="text-center">Login screen</h4>
                             <img src="images/login_screen.png" alt="Warrensburg dashboard " class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Dashboard " data-trigger="hover focus">
@@ -247,13 +279,13 @@
                             <img src="images/create_user.png" alt="Create user screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Create User " data-trigger="hover focus">
                         </div>
                     </div>
-                    <div class="row wow animated slideInRight" style="padding-bottom: 20px;">
+                    <div class="row wow sections animated slideInRight separator" style="padding-bottom: 20px;">
                         <div class="col-md-5  wow animated bounceInLeft">
-                            <img src="images/geometryScreen.png" class="center-block img-responsive" alt="MoJobs" title="MoJobs">
+                            <img src="images/geometryScreen.png" class="center-block img-thumbnail img-responsive" alt="MoJobs" title="MoJobs">
                         </div>
                         <div class="col-md-7 wow animated bounceInRight">
                             <h2>Geometry Tutorial web application </h2>
-                            <h3>University Technological of Panama - Final Project</h3>
+                            <h5>University Technological of Panama - Final Project</h5>
                             <h5>When: 2010</h5>
                             <p>
                                 Web application running as an interactive tutorial to help freshmen in studying Geometry for the admission tests of the Technological University of Panama.
@@ -266,10 +298,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row wow animated slideInRight" style="padding-bottom: 20px;">
+                    <div class="row wow sections animated slideInRight" style="padding-bottom: 20px;">
                         <div class="col-md-7 wow animated bounceInRight">
                             <h2>Protection One Panama logo </h2>
-                            <h3>Protection One Panama - Personal project</h3>
+                            <h5>Protection One Panama - Personal project</h5>
                             <h5>When: 2011</h5>
                             <p>
                                 Logo created for Protection One Panama security company.
@@ -280,7 +312,7 @@
                             </ul>
                         </div>
                         <div class="col-md-5  wow animated bounceInLeft">
-                            <img src="images/Logo.png" style="padding:35px 0;" class="center-block img-responsive" alt="ProtectionOne Logo" title="Protection One">
+                            <img src="images/Logo.png" style="padding:35px 0;" class="center-block img-thumbnail img-responsive" alt="ProtectionOne Logo" title="Protection One">
                         </div>
                     </div>
                 </div>
@@ -290,23 +322,23 @@
                     <div class="row sections" id="contact-section">
                         <h3 class="sectionTitle text-center" id="contactTitle">Contact me</h3>
                         <div class="col-md-6 col-md-offset-3">
-                            <p class="text-center">Send me an email:</p>
+                            <!-- <p class="text-center">Send me an email:</p> -->
                             <p class="text-center">
-                                <span style="color:#fff;font-size:20px;vertical-align:middle;" class="glyphicon glyphicon-envelope"></span>
-                                <a class="whiteLinks" href="mailto:gianinna.patricia@gmail.com">gianinna.patricia@gmail.com</a></p>
-                            <p class="text-center">Or message me:</p>
+                                <a style="margin:10px;" class=" btn btn-lg btn-default" style="font-variant:small-caps" href="mailto:gianinna.patricia@gmail.com"> <span style="color:#333;margin-right:10px;font-size:20px;vertical-align:middle;" class="glyphicon glyphicon-envelope"></span>Send me an email</a>
+                            </p>
+                            <!--  <p class="text-center">Or message me:</p>
                             <form id="contactForm">
                                 <div class="form-group wow animated tada">
                                     <label for="name">Your Name</label>
                                     <input type="text" class="form-control input-lg" id="name" placeholder="Name" required>
-                                </div>
-                                <!--  <div class="input-group input-group-lg">
+                                </div> -->
+                            <!--  <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">
                                 <i class="fa fa-user "></i>
                             </span>
                             <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
                         </div> -->
-                                <div class="form-group wow animated swing">
+                            <!--   <div class="form-group wow animated swing">
                                     <label for="email">Your Email address</label>
                                     <input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required>
                                 </div>
@@ -319,7 +351,7 @@
                                 <button type="submit" id="sendFormBtn" style="width:150px;" class="pull-right btn btn-default btn-lg wow animated slideInLeft">
                                     <span class="glyphicon glyphicon-send"></span> Send
                                 </button>
-                            </form>
+                            </form> -->
                             <div class="text-center">
                                 <p>..or Let's connect:</p>
                                 <a href="https://www.facebook.com/profile.php?id=100008916902032" target="_blank">
@@ -327,14 +359,21 @@
                                 <a href="http://www.linkedin.com/in/gianinnacaceres" target="_blank" title="LinkedIn">
                                     <img class="social" src="images/Linked-in.png" height="40" width: "40"></a>
                             </div>
-                            <hr>
-                            <p class="text-center"> <small>@2015 - Gianinna Caceres </small></p>
-                            <p class="text-center"><small>Created with HTML5 - CSS3 - Bootstrap and <i class="fa fa-heart-o"></i></small></p>
+                            <hr style="margin-bottom:3px; margin-top:40px;">
+                            <p style="margin:0" class="text-center"> <small>@2015 - Gianinna Caceres </small></p>
+                            <p style="margin:0" class="text-center"><small>Created with HTML5 - CSS3 - Bootstrap and <i class="fa fa-heart-o"></i></small></p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+        <script src="js/vendor/jquery/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/mainjs.js"></script>
+        <script src="js/vendor/wow.min.js"></script>
+        <script type="text/javascript">
+        new WOW().init();
+        </script>
     </body>
 
     </html>

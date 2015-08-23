@@ -1,11 +1,11 @@
 /*
     Created by Gianinna Caceres 
-    Gianinnas Caceres Website
+    Gianinna Caceres Website
     2015
 */
-//Bootstrap tooltip 
 $(document).ready(function() {
-    //$('#spyThis').scrollspy({ target: '#navmenu' });
+    var screenWidth = $(document).width();
+    $('[data-toggle="tooltip"]').tooltip();
 
     $('a[href^="#"]').on('click', function(event) {
         var target = $(this.hash);
@@ -19,6 +19,7 @@ $(document).ready(function() {
 
     $(window).load(function() {
         $(".preloader").fadeOut("slow");
+
     });
 
     $(window).scroll(function() {
@@ -29,7 +30,6 @@ $(document).ready(function() {
         var y = ($(window).scrollTop() * ratio);
         var smallPadding = navbarHeight - y;
         if ($(window).scrollTop() > bannerEnds) {
-            console.log('touched');
             $('.navbar').css('backgroundColor', '#8e44ad');
             $('.small-logo').css('display', 'block');
             $('.navbar').css({
@@ -38,7 +38,6 @@ $(document).ready(function() {
 
         } else {
             $('.small-logo').css('display', 'none');
-
             $('.navbar').css('backgroundColor', 'transparent');
             $('.navbar').css({
                 "box-shadow": "none"
@@ -50,10 +49,8 @@ $(document).ready(function() {
         } else {
             $('.goTop').fadeOut();
         }
-
-
-
     });
+
     //Click event to scroll to top
     $('.goTop').click(function() {
         $('html, body').animate({
@@ -62,34 +59,30 @@ $(document).ready(function() {
         return false;
     });
 
-    $('#sendFormBtn').on('click', function(event){
-        event.preventDefault();
-        var response = '';
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var message = $('#message').val();
-
-        if(!name || !email || !message)
-            response ='Please enter your name, email and message';
-
-        //TO-DO send an email with the data 
-
-
-
-        
-        //response =  'Your message has been sent. Thanks!';    
-        $('#response').text(response).fadeIn();
-        setTimeout(function() {
-            $('#response').text('').fadeOut();
-        }, 3000);
-
+    $('.navbar-collapse').on('show.bs.collapse', function() {
+       $('.navbar-header').css('backgroundColor', '#8e44ad');
+    });
+    $('.navbar-collapse').on('hidden.bs.collapse', function() {
+               $('.navbar-header').css('backgroundColor', 'transparent');
 
     });
 
 
+    // $('#sendFormBtn').on('click', function(event) {
+    //     event.preventDefault();
+    //     var response = '';
+    //     var name = $('#name').val();
+    //     var email = $('#email').val();
+    //     var message = $('#message').val();
+
+    //     if (!name || !email || !message)
+    //         response = 'Please enter your name, email and message';
+
+
+    //     // $('#response').text(response).fadeIn();
+    //     // setTimeout(function() {
+    //     //     $('#response').text('').fadeOut();
+    //     // }, 3000);
+    // });
 
 });
-
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip();
-})

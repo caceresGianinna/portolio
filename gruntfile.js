@@ -67,18 +67,21 @@ module.exports = function(grunt) {
                     }, {
                         src: ['favicon.ico'],
                         dest: 'dist/'
-                    },{
-                        src: ['images/**/'],
+                    }, {
+                        expand: true,
+                        src: 'images/**',
                         dest: 'dist/'
-                     }
-                    // ,{
-                    //     src: ['js/vendor/**'],
-                    //     dest: 'dist/'
-                    // }
-                    // ,{
-                    //     src: ['css/vendor/**'],
-                    //     dest: 'dist/'
-                    // }
+                    }
+                    ,{
+                        expand:true,
+                        src: ['js/vendor/**'],
+                        dest: 'dist/'
+                    }
+                    ,{
+                        expand:true,
+                        src: ['css/vendor/**'],
+                        dest: 'dist/'
+                    }
                 ]
             }
         }
@@ -93,7 +96,7 @@ module.exports = function(grunt) {
 
 
     //Default Tasks(s).
-    grunt.registerTask('default', ['uglify', 'cssmin',  'copy', 'htmlrefs']);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'copy', 'htmlrefs']);
 
     //grunt.registertask('default', ['svn-fetch', 'uglify', 'copy']);
     //grunt.log.write('Logging some stuff...').ok();

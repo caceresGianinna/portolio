@@ -6,10 +6,10 @@ module.exports = function(grunt) {
             options: {
                 'type': 'git',
                 svnOptions: {
-                    username: 'giacaceres',
+                    username: 'giacaceres0711',
                     password: 'Svdw880711'
                 },
-                'repository': 'https://bitbucket.org/giacaceres/giaportfolio/src',
+                'repository': 'https://bitbucket.org/giacaceres/portfolio/src',
                 'path': 'dist/'
             },
             dist: {
@@ -25,8 +25,36 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'js/<%= pkg.name %>.js',
-                dest: 'dist/<%= pkg.name %>.min.js'
+                src: 'js/mainjs.js',
+                dest: 'dist/js/main.min.js'
+            }
+        },
+
+        cssmin: {
+            options: {
+                mergeIntoShorthands: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'dist/css/style.min.css': 'css/style.css'
+                }
+            }
+        },
+        htmlrefs: {
+            dist: {
+                /** @required  - string including grunt glob variables */
+                src: 'dist/index.html',
+                /** @optional  - string directory name*/
+                dest: 'dist/index.html',
+                /** @optional  - references external files to be included */
+                // includes: {
+                //     analytics: './ga.inc' // in this case it's google analytics (see sample below) 
+                // },
+                /** any other parameter included on the options will be passed for template evaluation */
+                options: {
+                    version: '<%= pkg.version %>',
+                }
             }
         },
         copy: {
@@ -34,10 +62,24 @@ module.exports = function(grunt) {
                 files:
                 //includes files within path and its sub-directories
                     [{
-                    expand: true,
-                    src: ['css/**'],
-                    dest: ['dist/css/']
-                }]
+                        src: ['index.html'],
+                        dest: 'dist/'
+                    }, {
+                        src: ['favicon.ico'],
+                        dest: 'dist/'
+                    },{
+                        src: ['images/**/'],
+                        dest: 'dist/'
+                     }
+                    // ,{
+                    //     src: ['js/vendor/**'],
+                    //     dest: 'dist/'
+                    // }
+                    // ,{
+                    //     src: ['css/vendor/**'],
+                    //     dest: 'dist/'
+                    // }
+                ]
             }
         }
     });
@@ -45,11 +87,13 @@ module.exports = function(grunt) {
     //Load the plugin that provides the "uglify" task
     grunt.loadNpmTasks('grunt-svn-fetch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-htmlrefs');
 
 
     //Default Tasks(s).
-      grunt.registerTask('default', ['svn_fetch','uglify', 'copy']);
+    grunt.registerTask('default', ['uglify', 'cssmin',  'copy', 'htmlrefs']);
 
     //grunt.registertask('default', ['svn-fetch', 'uglify', 'copy']);
     //grunt.log.write('Logging some stuff...').ok();

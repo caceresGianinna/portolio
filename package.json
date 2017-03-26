@@ -1,6 +1,6 @@
 {
-  "name": "GIA",
-  "version": "1.0.0",
+  "name": "portfolio",
+  "version": "1.0.1",
   "description": "Gianinna Caceres Portfolio Website",
   "main": "gruntfile.js",
   "dependencies": {
@@ -9,6 +9,7 @@
   "devDependencies": {
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-uglify": "^0.9.1",
+    "grunt-htmlrefs": "^0.5.0",
     "grunt-svn-fetch": "^0.1.5",
     "uglify": "^0.1.3"
   },

@@ -394,7 +394,8 @@ h3.sectionTitle {
 }
 
 .social {
-    margin: 0 5px;
+    padding: 10px;
+    display: inline-block;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     -moz-transform: scale(1);
@@ -402,7 +403,8 @@ h3.sectionTitle {
     transition: 0.5s transform cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 
-img.social:hover {
+a.social:hover {
+    color: #403D39;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -moz-transform: scale(1.2);

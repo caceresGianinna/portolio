@@ -5,7 +5,6 @@ body {
     /*font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;*/
     font-family: 'Lato', "Segoe UI", Arial, sans-serif;
     position: relative;
-    font-size: 1.6em;
 }
 
 
@@ -136,6 +135,9 @@ pre,
 .separator {
     border-bottom: 1px solid #dedede;
 }
+.separator-top{
+    border-top: 1px solid #dedede;
+}
 
 
 /*Old CSS*/
@@ -221,11 +223,10 @@ a.purpleLinks {
 
 a.whiteLinks:hover {
     color: #f2f2f2;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-a.purpleLinks:hover,
-a {
+a.purpleLinks:hover {
     text-decoration: underline;
 }
 

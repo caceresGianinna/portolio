@@ -72,31 +72,14 @@
                         <div class="col-md-9 col-xs-12">
                             <!--<span id="hello">Hello!</span>-->
                             <span id="aboutMeText">
-
-                       <p>I am a Front-End developer who loves to create functional and beautiful websites and web applications. I am a lifetime learner and detail attentive. </p>
-
-                     <!--   <p>I graduated from Technological University of Panama in Bachelor in Systems Engineering. </p> -->
-                       <p>I am currently working as Front-end developer using Angular 2, TypeScript, HTML5 and CSS. </p>
-
-                       <p>I am also a coffee lover, when I am not learning new technologies, you can find me drawing fashion illustrations, or learning a new language. </p>
-                       <!--  <p>Would you like to know more about me? 
-                        <a class="btn btn-purple" href="" class="purpleLinks">Download my Resume</a>
-                    </p> -->
-                    </span>
+                               <p>I am a Front-End developer who loves to create functional and beautiful websites and web applications. I am a lifetime learner and detail attentive. </p>
+                               <p>I am currently working as Front-end developer using Angular 4, TypeScript, RxJs, HTML5 and CSS. </p>
+                               <p>I am also a coffee lover, when I am not learning new technologies, you can find me drawing fashion illustrations, or learning a new language. </p>
+                            </span>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- <section>
-                <div class="container">
-                    <h3 class="sectionTitle text-center">Education</h3>
-                    <div class="row sections animated wow fadeIn" id="education-section">
-                        <div class="col-md-6">
-                            <b>University of Central Missouri</b>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
             <section id="skills-section">
                 <div class="container">
                     <div class="row sections" id="skills-section">
@@ -108,9 +91,10 @@
                                 <li>HTML5</li>
                                 <li>CSS3</li>
                                 <li>JavaScript</li>
-                                <li>jQuery</li>
-                                <li>AngularJs 1.x & 2</li>
-                                <li>jQuery UI</li>
+                                <li>jQuery & jQuery UI</li>
+                                <li>AngularJs 1.x & Angular 4</li>
+                                <li>TypeScript</li>
+                                <li>RxJs</li>
                                 <li>Bootstrap</li>
                                 <li>Less</li>
                                 <li>Wordpress</li>
@@ -132,7 +116,7 @@
                                 <li>Chrome Developer tools</li>
                                 <li>Firebug</li>
                                 <li>IE Developer tools</li>
-                                <li>TeamCity</li>
+                                <li>TeamCity CI</li>
                             </ul>
                         </div>
                         <div class="col-md-3 text-center">
@@ -163,15 +147,34 @@
                 <div class="container">
                     <h3 class="sectionTitle text-center"> Portfolio</h3>
                     <div class="row sections separator">
-                        <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
-                            <img src="images/iskartourshome.png" class="img-responsive center-block" alt="Iskar" title="Iskar">
+                        <div class="col-md-3 col-lg-3 centerTextCol wow animated bounceInLeft">
+                            <img src="images/stickers-app/stickers1.png" class="img-responsive center-block" alt="Panamanian food stickers" style="height:500px" title="Panamanian food stickers">
                         </div>
+                        <div class="col-md-3 col-lg-3 centerTextCol wow animated bounceInLeft">
+                            <img src="images/stickers-app/stickers2.png" class="img-responsive center-block" alt="Panamanian food stickers" style="height:500px" title="Panamanian food stickers">
+                        </div>
+                        <div class="col-md-6 col-lg-6 portfolioText wow animated bounceInRight">
+                            <h2>Panamanian Food iMessage stickers</h2>
+                            <h4>Personal Project</h4>
+                            <h4>When: 2017</h4>
+                            <p>I love to draw, so when I saw <a class="purplelinks" href="https://design.tutsplus.com/tutorials/how-to-create-imessage-stickers-and-make-extra-cah--cms-28307" target="_blank">this tutorial</a> about creating stickers for iMessage I was excited to create my stickers pack. So, on a long weekend, I drew this pack of stickers of Panamanian food.</p>
+                            <h4>Tools and software used:</h4>
+                            <ul>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe Photoshop</li>
+                                <li>XCode</li>
+                            </ul>
+                            <a href="https://itunes.apple.com/us/app/panamanian-food/id1244477461?mt=8" class="purplelinks" title="Panamanian food stickers">View stickers in App store.</a>
+                        </div>
+                    </div>
+                    <!-- Iskar -->
+                    <div class="row sections separator">
                         <div class="col-md-7 col-lg-6 portfolioText wow animated bounceInRight">
                             <h2>Iskar </h2>
-                            <h5>Personal Project - Iskar Tours</h5>
-                            <h5>When: 2015 - present</h5>
+                            <h4>Personal Project - Iskar Tours</h4>
+                            <h4>When: 2015 - 2016</h4>
                             <p>Iskar tours is a company that provides tours to San Blas Islands in Panama.</p>
-                            <h5>Technologies and Tools used:</h5>
+                            <h4>Technologies and Tools used:</h4>
                             <ul>
                                 <li>HTML5/CSS3</li>
                                 <li>JavaScript</li>
@@ -182,6 +185,9 @@
                                 <li>Git</li>
                             </ul>
                         </div>
+                        <div class="col-md-5 col-lg-6 centerTextCol wow animated bounceInLeft">
+                            <img src="images/iskartourshome.png" class="img-responsive center-block" alt="Iskar" title="Iskar">
+                        </div>
                     </div>
                     <!-- ToDo: add another row with new screens for this project -->
                     <div class="row sections">
@@ -189,12 +195,22 @@
                             <img src="images/mojobs/mojobsTwo.png" style="height:500px;" class="img-responsive center-block" alt="MoJobs" title="MoJobs">
                         </div>
                         <div class="col-md-7 col-lg-6 portfolioText wow animated bounceInRight">
-                            <h2>Jobs MOGov mobile application </h2>
-                            <h5>CoolSoft - UI Developer Contractor - Client: Missouri Government</h5>
-                            <h5>When: 2014</h5>
+                            <h2>Jobs MOGov mobile application [UI Developer Contractor] </h2>
+                            <h4>CoolSoft - Client: Missouri Government</h4>
+                            <h4>When: 2014</h4>
                             <p>Jobs.mo.gov mobile application is the mobile version of the web portal for information and on-line services provided by the Division of Workface Development. </p>
                             <p>The application provides workforce services for businesses and job seekers in Missouri, helping job seekers find gainful employment and providing businesses with a skilled, trained workforce. </p>
-                            <h5>Technologies Used:</h5>
+                            <h4>Responsibilities:</h4>
+                            <ul>
+                                <li>Implemented Apache Cordova plugins such as InAppBrowser, and Geolocation to get user’s position from mobile device. </li>
+                                <li> Used JSON to get data from back-end, consuming Restful web services in CORS environment. </li>
+                                <li> Implemented Favorites functionality using HTML WebSql and Local Storage, to create, remove, and update favorites list.</li>
+                                <li> Utilized Google Maps API and AngularJs for map functionalities.</li>
+                                <li> Worked with CSS3 and Ionic CSS components to create the application theme and interactions. </li>
+                                <li>Implemented Login/Logout functionality.</li>
+                                <li> Worked with Google Maps Library and Apache Cordova Geolocation plugin to get user’s zip code based on user’s current location. </li>
+                            </ul>
+                            <h4>Technologies Used:</h4>
                             <ul>
                                 <li>HTML5/CSS3</li>
                                 <li>Ionic open source front-end SDK for developing hybrid mobile apps with HTML5 and AngularJs</li>
@@ -224,10 +240,10 @@
                     <div class="row sections">
                         <div class="col-md-7 col-lg-6  wow animated bounceInRight">
                             <h2> Visit Warrensburg  </h2>
-                            <h5>Warrensburg Visitors Center</h5>
-                            <h5>When: 2013-2014</h5>
+                            <h4>Warrensburg Visitors Center</h4>
+                            <h4>When: 2013-2014</h4>
                             <p> Worked in Warrensburg Visitors Center website, created with Wordpress CMS as per business requirements.</p>
-                            <h5> Technologies and tools used: </h5>
+                            <h4> Technologies and tools used: </h4>
                             <ul>
                                 <li>Balsamiq</li>
                                 <li>Wordpress</li>
@@ -262,9 +278,9 @@
                         </div>
                         <div class="col-md-7  wow animated bounceInRight">
                             <h2> Warrensburg Visitors Center web app  </h2>
-                            <h5>When : 2013-2014</h5>
+                            <h4>When : 2013-2014</h4>
                             <p> Warrensburg Visitors Center web application provides access to contact form information from VisitWarrensburg website.</p>
-                            <h5> Technologies and tools used: </h5>
+                            <h4> Technologies and tools used: </h4>
                             <ul>
                                 <li>Bootstrap</li>
                                 <li>jQuery</li>
@@ -292,14 +308,11 @@
                             <img src="images/create_user.png" alt="Create user screen" class="img-thumbnail img-responsive center-block" data-toggle="tooltip" data-placement="top" title="Create User " data-trigger="hover focus">
                         </div>
                     </div>
-                    <div class="row wow sections animated slideInRight separator" style="padding-bottom: 20px;">
-                        <div class="col-md-5  wow animated bounceInLeft">
-                            <img src="images/geometryScreen.png" class="center-block img-thumbnail img-responsive" alt="MoJobs" title="MoJobs">
-                        </div>
-                        <div class="col-md-7 wow animated bounceInRight">
+                    <div class="row wow sections animated slideInUp">
+                        <div class="col-md-12">
                             <h2>Geometry Tutorial web application </h2>
-                            <h5>University Technological of Panama - Final Project</h5>
-                            <h5>When: 2010</h5>
+                            <h4>University Technological of Panama - Final Project</h4>
+                            <h4>When: 2010</h4>
                             <p>
                                 Web application running as an interactive tutorial to help freshmen in studying Geometry for the admission tests of the Technological University of Panama.
                             </p>
@@ -311,11 +324,19 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row wow sections animated slideInRight" style="padding-bottom: 20px;">
+                    <div class="row wow sections animated slideInRight separator ">
+                        <div class="col-md-6  wow animated bounceInLeft">
+                            <img src="images/geometryHome.png" class="center-block img-thumbnail img-responsive" alt="Geometry tutorial" title="Geometry tutorial">
+                        </div>
+                        <div class="col-md-6 wow animated bounceInRight">
+                            <img src="images/geometryScreen.png" class="center-block img-thumbnail img-responsive" alt="Geometry tutorial" title="Geometry tutorial">
+                        </div>
+                    </div>
+                    <div class="row wow sections animated slideInRight separator" style="padding-bottom: 20px;">
                         <div class="col-md-7 wow animated bounceInRight">
                             <h2>Protection One Panama logo </h2>
-                            <h5>Protection One Panama - Personal project</h5>
-                            <h5>When: 2011</h5>
+                            <h4>Protection One Panama - Personal project</h4>
+                            <h4>When: 2011</h4>
                             <p>
                                 Logo created for Protection One Panama security company.
                             </p>
@@ -326,6 +347,17 @@
                         </div>
                         <div class="col-md-5  wow animated bounceInLeft">
                             <img src="images/Logo.png" style="padding:35px 0;" class="center-block img-thumbnail img-responsive" alt="ProtectionOne Logo" title="Protection One">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="badges-section">
+                <div class="container">
+                    <div class="row sections separator-top">
+                        <h3 class="sectionTitle text-center">CodeSchool badges</h3>
+                        <div class="col-md-6 col-md-offset-3" id="completed_badges">
+                            <p>Track my completed courses in CodeSchool with my badges</p>
+                            <div id="completed_badges" class="flexcontainer"></div>
                         </div>
                     </div>
                 </div>
@@ -367,14 +399,21 @@
                             </form> -->
                             <div class="text-center">
                                 <p>..or Let's connect:</p>
-                                <a href="https://www.facebook.com/profile.php?id=100008916902032" target="_blank">
-                                    <img src="images/Facebook.png" height="40" width: "40" title="Facebook" class="social"></a>
-                                <a href="http://www.linkedin.com/in/gianinnacaceres" target="_blank" title="LinkedIn">
-                                    <img class="social" src="images/Linked-in.png" height="40" width: "40"></a>
+                                <a class="social" href="http://www.linkedin.com/in/gicaceres" target="_blank" title="LinkedIn">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a class="social" href="https://github.com/caceresGianinna" target="_blank" title="Github">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                                <a class="social" href="https://bitbucket.org/gianinnaCaceres" target="_blank" title="Bitbucket">
+                                    <i class="fa fa-bitbucket fa-2x" aria-hidden="true"></i>
+                                </a>
                             </div>
                             <hr style="margin-bottom:3px; margin-top:40px;">
                             <p style="margin:0" class="text-center"> <small>@2015 - Gianinna Caceres </small></p>
-                            <p style="margin:0" class="text-center"><small>Created with HTML5 - CSS3 - Bootstrap and <i class="fa fa-heart-o"></i></small></p>
+                            <p style="margin:0" class="text-center">
+                                <small>Created with HTML5 - CSS3 - Bootstrap and <i class="fa fa-heart-o"></i></small>
+                            </p>
                         </div>
                     </div>
                 </div>

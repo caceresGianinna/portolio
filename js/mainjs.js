@@ -67,6 +67,44 @@ $(document).ready(function() {
 
     });
 
+    // Codeschool badges
+     $.ajax({
+    url: 'https://www.codeschool.com/users/giacaceres.json',
+    dataType: 'jsonp',
+    success: function(data) {
+      renderBadges(data.courses.completed)
+    }
+  });
+
+  function renderBadges(courses) {
+
+    var $badges = $('#completed_badges');
+
+    courses.forEach(function(course) {
+
+      $div = $('<div />', {
+        'class': 'course'
+      }).appendTo($badges);
+
+      $('<h3 />', {
+        text: course.title
+      }).appendTo($div);
+
+      $('<img />', {
+        src: course.badge
+      }).appendTo($div);
+
+      $('<a />', {
+        'class': 'purplelinks',
+        target: '_blank',
+        href: course.url,
+        text: 'See Course'
+      }).appendTo($div);
+
+    });
+
+  }
+
 
     // $('#sendFormBtn').on('click', function(event) {
     //     event.preventDefault();

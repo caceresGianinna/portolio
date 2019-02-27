@@ -4,15 +4,15 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         svn_fetch: {
             options: {
-                'type': 'git',
-                svnOptions: {
-                    username: 'giacaceres0711',
-                    password: 'Svdw880711'
-                },
-                'repository': 'https://bitbucket.org/giacaceres/portfolio/src',
-                'path': 'dist/'
+                // 'type': 'git',
+                // svnOptions: {
+                //     username: 'giacaceres0711',
+                //     password: 'Svdw880711'
+                // },
+                // 'repository': 'https://bitbucket.org/giacaceres/portfolio/src',
+                // 'path': 'docs/'
             },
-            dist: {
+            docs: {
                 map: {
                     'css': 'css', //folder : svnfolder url resolved based on path
                     'js': 'js',
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: 'js/mainjs.js',
-                dest: 'dist/js/main.min.js'
+                dest: 'docs/js/main.min.js'
             }
         },
 
@@ -37,16 +37,16 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'dist/css/style.min.css': 'css/style.css'
+                    'docs/css/style.min.css': 'css/style.css'
                 }
             }
         },
         htmlrefs: {
-            dist: {
+            docs: {
                 /** @required  - string including grunt glob variables */
-                src: 'dist/index.html',
+                src: 'docs/index.html',
                 /** @optional  - string directory name*/
-                dest: 'dist/index.html',
+                dest: 'docs/index.html',
                 /** @optional  - references external files to be included */
                 // includes: {
                 //     analytics: './ga.inc' // in this case it's google analytics (see sample below) 
@@ -63,24 +63,24 @@ module.exports = function(grunt) {
                 //includes files within path and its sub-directories
                     [{
                         src: ['index.html'],
-                        dest: 'dist/'
+                        dest: 'docs/'
                     }, {
                         src: ['favicon.ico'],
-                        dest: 'dist/'
+                        dest: 'docs/'
                     }, {
                         expand: true,
                         src: 'images/**',
-                        dest: 'dist/'
+                        dest: 'docs/'
                     }
                     ,{
                         expand:true,
                         src: ['js/vendor/**'],
-                        dest: 'dist/'
+                        dest: 'docs/'
                     }
                     ,{
                         expand:true,
                         src: ['css/vendor/**'],
-                        dest: 'dist/'
+                        dest: 'docs/'
                     }
                 ]
             }

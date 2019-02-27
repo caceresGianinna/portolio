@@ -30,7 +30,7 @@ $(document).ready(function() {
         var y = ($(window).scrollTop() * ratio);
         var smallPadding = navbarHeight - y;
         if ($(window).scrollTop() > bannerEnds) {
-            $('.navbar').css('backgroundColor', '#8e44ad');
+            $('.navbar').css('backgroundColor', '#2196f3');
             $('.small-logo').css('display', 'block');
             $('.navbar').css({
                 "box-shadow": " 0 12px 15px 0 rgba(0, 0, 0, 0.24"
@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
 
     $('.navbar-collapse').on('show.bs.collapse', function() {
-       $('.navbar-header').css('backgroundColor', '#8e44ad');
+       $('.navbar-header').css('backgroundColor', '#2196f3');
     });
     $('.navbar-collapse').on('hidden.bs.collapse', function() {
                $('.navbar-header').css('backgroundColor', 'transparent');
@@ -95,7 +95,7 @@ $(document).ready(function() {
       }).appendTo($div);
 
       $('<a />', {
-        'class': 'purplelinks',
+        'class': 'cta-link',
         target: '_blank',
         href: course.url,
         text: 'See Course'
@@ -104,23 +104,5 @@ $(document).ready(function() {
     });
 
   }
-
-
-    // $('#sendFormBtn').on('click', function(event) {
-    //     event.preventDefault();
-    //     var response = '';
-    //     var name = $('#name').val();
-    //     var email = $('#email').val();
-    //     var message = $('#message').val();
-
-    //     if (!name || !email || !message)
-    //         response = 'Please enter your name, email and message';
-
-
-    //     // $('#response').text(response).fadeIn();
-    //     // setTimeout(function() {
-    //     //     $('#response').text('').fadeOut();
-    //     // }, 3000);
-    // });
 
 });

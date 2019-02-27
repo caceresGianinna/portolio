@@ -1,10 +1,9 @@
-/*css*/
-
 body {
     background-color: #F3F5F4;
-    /*font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;*/
-    font-family: 'Lato', "Segoe UI", Arial, sans-serif;
+    font-family: 'EB Garamond', serif;
     position: relative;
+    font-size: 18px;
+    color: black;
 }
 
 
@@ -65,11 +64,7 @@ pre,
         text-align: center;
         width: 100%;
     }
-    /* .navbar-toggle {
-        position: fixed;
-        right: 30px;
-        margin: 5px 0;
-    }*/
+    
     .wow {
         visibility: visible !important;
         -webkit-animation: none !important;
@@ -78,23 +73,24 @@ pre,
         -ms-animation: none !important;
         animation: none !important;
     }
+
     #bannerContent {
         padding-top: 150px;
+        color:black;
     }
-    /*#menuNavContainer {
-        background-color: #8e44ad;
-    }*/
+
     ul.nav.navbar-nav {
         margin: 0;
         padding: 0;
     }
     /*collapsed*/
+
     #navmenu.navbar-collapse.collapse.in,
     #navmenu.navbar-collapse.collapsing {
-        background-color: #8e44ad;
+        background-color: #03A9F4;
     }
     #navmenu.navbar-collapse.collapse {
-        background-color: transparent;
+        background-color: #03A9F4;
     }
 }
 
@@ -108,10 +104,6 @@ pre,
     #bannerContent {
         padding-top: 250px;
     }
-    /* #menuNavContainer{
-            background-color: transparent;
-
-    }*/
 }
 
 .navbar-portfolio {
@@ -120,11 +112,11 @@ pre,
 }
 
 #menuNavContainer {
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    border: none;
-    color: #ecf0f1;
     background-color: transparent;
+    color: #fff;
+    font-family: 'EB Garamond', serif;
+    border: none;
+    color: black;
 }
 
 .sections {
@@ -139,40 +131,24 @@ pre,
     border-top: 1px solid #dedede;
 }
 
-
-/*Old CSS*/
-
-
-/*
-Set of colors:
-Background: #ecf0f1;
-Navy Blue for footer: #34495e; //#8e44ad #9b59b6
-Turqouise for Banner: #1abc9c;
-Links and buttons: #3498db;
-*/
-
-
-/*Other theme: purple : 8e44ad for links and footer*/
-
 ul.skills {
     list-style: none;
     padding: 0;
 }
 
 h4 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
 }
 
-.btn-purple {
-    background-color: #8e44ad;
+.cta {
+    background-color: #03A9F4;
 }
 
 .small-logo {
+    color: black;
     display: none;
-    font-size: 1.8em;
-    font-family: 'Oleo Script', cursive;
-    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
     -webkit-transition: 0.5s ease-in all;
     -moz-transition: 0.5s ease-in all;
     -ms-transition: 0.5s ease-in all;
@@ -188,7 +164,8 @@ h4 {
 
 .navbar-links {
     text-transform: uppercase;
-    color: #ecf0f1 !important;
+    color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
 ul.nav.navbar-nav > li:hover {
@@ -212,13 +189,13 @@ ul.nav.navbar-nav > li:hover {
 a {
     color: white;
     font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 
-a.purpleLinks {
-    color: #8e44ad;
+a.cta-link {
+    color: #03A9F4;
     text-decoration: underline;
+    font-family: 'Oswald', sans-serif;
 }
 
 a.whiteLinks:hover {
@@ -226,12 +203,20 @@ a.whiteLinks:hover {
     text-decoration: none;
 }
 
-a.purpleLinks:hover {
+a.cta-link:hover {
     text-decoration: underline;
 }
 
+.navbar-inverse {
+    background-color: #2196F3
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+}
+
 a:hover {
-    color: #8e44ad;
+    color: #03A9F4;
     cursor: pointer;
     text-decoration: none;
 }
@@ -250,8 +235,8 @@ a.ghostButton {
     display: inline-block;
     width: 200px;
     padding: 8px;
-    color: #fff;
-    border: 2px solid #fff;
+    color: black;
+    border: 2px solid #000;
     text-align: center;
     outline: none;
     text-decoration: none;
@@ -260,18 +245,14 @@ a.ghostButton {
 
 .ghostButton:hover,
 .ghostButton:active {
-    /*color: #8e44ad;
-    border-color: #8e44ad;
-    transition: border-color 0.4s ease-in, color 0.4s ease-in;*/
-    background-color: #8e44ad;
-    border-color: #8e44ad;
+    background-color: #03A9F4;
+    border-color: #03A9F4;
     color: #fff;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
     transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
 
 .nav {
-    /*background-color: #ecf0f1;*/
     background-color: transparent;
     height: 50px;
     float: right;
@@ -286,13 +267,13 @@ a.ghostButton {
     padding: 7px;
     border: 1px solid #dedede;
     background-color: #f2f2f2;
-    color: #8e44ad;
+    color: #03A9F4;
     border-radius: 2px;
 }
 
 .goTop:hover,
 .goTop:visited {
-    color: #8e44ad;
+    color: #03A9F4;
 }
 
 ul#menu {
@@ -306,31 +287,22 @@ ul#menu {
 }
 
 #banner {
-    font-family: 'Lato', sans-serif;
+    color: black;
     width: 100%;
     height: 700px;
-    /*background-color: #1abc9c;*/
-    /* background: url('../images/laptop.jpg') no-repeat center center;*/
-    background-image: linear-gradient(to bottom, rgba(142, 68, 173, 0.7), rgba(0, 0, 0, 0.6)), url('../images/web-design.jpg');
-    /*background-image: linear-gradient(to bottom, rgba(142, 68, 173, 0.4), rgba(0, 0, 0, 0.4)), url('../images/wireframe.jpg');*/
-    /*background-image: linear-gradient(to bottom, rgba(142, 68, 173, 0.4), rgba(0, 0, 0, 0.5)), url('../images/HeroImage.jpg');*/
+    background-image: linear-gradient(to bottom,rgb(97,97,97,0.6),rgb(227,227,227,.4)),url(../images/web-design.jpg);
     background-size: cover;
 }
 
 #bannerContent {
     margin: 0 auto;
     height: 100%;
-    /*padding-top: 250px;*/
     text-align: center;
-    color: #ecf0f1;
-}
-
-#bannerContent> h3 {
-    font-family: 'Lato', sans-serif;
+    color: black;
 }
 
 #bannerContent> h2 {
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-size: 4.0em;
 }
@@ -351,31 +323,23 @@ ul#menu {
 }
 
 h3.sectionTitle {
-    color: #9b59b6;
+    color: #273238;
     font-size: 2.5em;
-    font-family: 'Oleo Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    margin:30px;
 }
 
 .giaSkillsIcon {
     font-size: 2.0em;
-    color: #9b59b6;
+    color: #2196F3;
 }
 
 #skills-section {
     background: #fff;
     height: auto;
-}
-
-
-/*Highcharts */
-
-#skillsContainer {
-    width: 100%;
-    min-height: 420px;
-    height: auto;
-    margin: 0 auto;
 }
 
 #portfolio-section {
@@ -417,18 +381,14 @@ a.social:hover {
 }
 
 #contact-section {
-    background: #9b59b6;
+    background: #2196F3;
     height: auto;
     color: #dedede;
-    /*rgba(142, 68, 173,1.0)*/
-    /*background-image: linear-gradient(to bottom, rgba(155, 89, 182,0.8), rgba(155, 89, 182,0.8)), url('../images/footer-bg.jpg');*/
-    background-image: linear-gradient(to bottom, rgba(142, 68, 173, 0.7), rgba(142, 68, 173, 0.7)), url('../images/footer-bg.jpg');
     background-size: cover;
 }
 
 #contactForm {
     height: 400px;
-    /*padding: 10px;*/
 }
 
 h3#contactTitle {
@@ -436,45 +396,9 @@ h3#contactTitle {
 }
 
 .portfolioText {
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .centerTextCol {
     text-align: center;
-}
-
-/*Badges section*/
-#completed_badges {
-  text-align: center;
-}
-
-.course {
-  background: #F5F5F5;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 1px 1px 5px #EAEAEA;
-  display: inline-block;
-  height: 250px;
-  margin: 20px 10px;
-  padding: 15px 10px;
-  width: 200px;
-}
-
-.course h3 {
-  color: #999;
-  font-size: 1.9rem;
-  font-weight: 200;
-  min-height: 40px;;
-}
-
-.course img {
-  border: none;
-  height: 80px;
-  margin-bottom: 20px;
-  max-width: 100%;
-  width: 80px;
-}
-
-.course a {
-  display: block;
 }
